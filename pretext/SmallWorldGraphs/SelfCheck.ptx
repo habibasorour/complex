@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p><BlankNode/> is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors. <var/>  </p>
+      <p><BlankNode/> Is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors. <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -32,7 +32,7 @@
   </exercise>
   <exercise label="SC4_Q2">
     <statement>
-      <p>Q-2: Which of the below graph algorithms are used for computing the shortest path between nodes. Select multiple choices.</p>
+      <p>Which of the below graph algorithms are used for computing the shortest path between nodes. Select multiple choices.</p>
     </statement>
     <choices>
       <choice correct="yes">
