@@ -21,13 +21,13 @@ for i in range(10):
   </figure>
   <p><xref ref="abm-fig-2"/> shows how the degree of segregation increases and where it levels off for several values of <c>p</c>. When <c>p=0.4</c>, the degree of segregation in steady state is about 82%, and a majority of agents have no neighbors with a different color.</p>
   <p>These results are surprising to many people, and they make a striking example of the unpredictable relationship between individual decisions and system behavior.</p>
-  <exercise>
+<exercise>
     <statement>
       <p>The average fraction of similar neighbors is <BlankNode/> % in the initial configuration, <BlankNode/> % after two steps, and <BlankNode/> % after 10 steps! <var/>  <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
-        <condition number="[50, 50]">
+        <condition number="50" tolerance="0.5">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -39,7 +39,7 @@ for i in range(10):
         </condition>
       </var>
       <var>
-        <condition number="[65, 65]">
+        <condition number="65" tolerance="0.5">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -51,7 +51,7 @@ for i in range(10):
         </condition>
       </var>
       <var>
-        <condition number="[75, 75]">
+        <condition number="75" tolerance="0.5">
           <feedback>
             <p>Correct!</p>
           </feedback>
