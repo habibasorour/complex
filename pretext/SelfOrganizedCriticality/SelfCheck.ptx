@@ -32,6 +32,7 @@
       </var>
     </setup>
   </exercise>
+
   <exercise label="SC9_Q2" indent="show" language="python">
     <statement>
       <p>Please put the step method that finds all cells above k and topples them.</p>
@@ -61,18 +62,22 @@
       </block>
     </blocks>
   </exercise>
+
+
   <exercise>
     <statement>
-      <p>A <BlankNode/> model describes a system by describing its parts and their interactions. <BlankNode/> models are more focused on similarities between systems and less interested in analogous parts. <var/>  <var/>  </p>
+
+      <p>A <BlankNode/>  <var/> model describes a system by describing its parts and their interactions. <BlankNode/><var/>models are more focused on similarities between systems and less interested in analogous parts.    </p>
+
     </statement>
     <setup>
       <var>
-        <condition string="^\s*reductionist\s*$">
+        <condition string="^\s*[Rr]eductionist\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*holistic\s*$">
+        <condition string="^\s*[Hh]olistic\s*$">
           <feedback>
             <p>Incorrect, holistic models are more focused on similarities between systems and less interested in analogous parts.</p>
           </feedback>
@@ -84,12 +89,12 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*holistic\s*$">
+        <condition string="^\s*[Hh]olistic\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*reductionist\s*$">
+        <condition string="^\s*[Rr]eductionist\s*$">
           <feedback>
             <p>Incorrect, reductionists models describe a system by describing its parts and their interactions.</p>
           </feedback>
