@@ -32,8 +32,7 @@ pmfS = Pmf(S)</pre>
   <p>Another possibility, which you can explore in one of the exercises at the end of this chapter, is that these distributions do not strictly obey a power law. But even if they are not power-law distributions, they might still be heavy-tailed.</p>
   <exercise label="q_9_5_1">
     <statement>
-      <p>
-</p>
+      <p>Drag the textbox on the left to its corresponding answer.</p>
     </statement>
     <matches>
       <match order="1">
