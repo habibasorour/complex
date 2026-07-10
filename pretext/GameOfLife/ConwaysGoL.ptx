@@ -29,8 +29,10 @@
   </p>
   <exercise>
     <statement>
-      <p>In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling.</p>
-       <p>In GoL (Game of life), If a cell is alive, it stays alive if it has <BlankNode/><var/> or <BlankNode/><var/> neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly <BlankNode/><var/> neighbors. <strong>(please list these two values in increasing order)</strong> </p>
+      <p>In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling and list the values in increasing order. </p>
+
+
+       <p>In GoL (Game of life), If a cell is alive, it stays alive if it has <BlankNode/><var/> or <BlankNode/><var/> neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly <BlankNode/><var/> neighbors.</p>
 
     </statement>
     <setup>
@@ -47,6 +49,7 @@
           <p>Please give the numeral, not the spelling.</p>
         </feedback>
       </condition>
+      
       <condition string=".*">
         <feedback>
           <p>Incorrect.</p>
