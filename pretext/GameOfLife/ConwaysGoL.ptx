@@ -29,63 +29,72 @@
   </p>
   <exercise>
     <statement>
-      <p>In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling. <var/>  <var/>  <var/>  </p>
+      <p>In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling and list the values in increasing order. </p>
+
+
+       <p>In GoL (Game of life), If a cell is alive, it stays alive if it has <BlankNode/><var/> or <BlankNode/><var/> neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly <BlankNode/><var/> neighbors.</p>
+
     </statement>
     <setup>
+
+
       <var>
-        <p>In GoL (Game of life), If a cell is alive, it stays alive if it has <BlankNode/> or <BlankNode/> neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly <BlankNode/> neighbors.</p>
-        <condition number="[2, 2]">
-          <feedback>
-            <p>Correct, with 2 neighboring cells the cell would stay alive.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*two\s*$">
-          <feedback>
-            <p>
-              <term>Please give the numeral not the spelling.</term>
-            </p>
-          </feedback>
-        </condition>
-      </var>
+  <condition number="2">
+        <feedback>
+          <p>Correct</p>
+        </feedback>
+      </condition>
+      <condition string="^\s*two\s*$" case="insensitive">
+        <feedback>
+          <p>Please give the numeral, not the spelling.</p>
+        </feedback>
+      </condition>
+      
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect.</p>
+        </feedback>
+      </condition>
+    </var>
+
       <var>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Incorrect.</p>
-          </feedback>
-        </condition>
-        <condition number="[3, 3]">
-          <feedback>
-            <p>Correct, with 2 or 3 neighboring cells the cell would stay alive.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*three\s*$">
-          <feedback>
-            <p>
-              <term>Please give the numeral not the spelling.</term>
-            </p>
-          </feedback>
-        </condition>
-      </var>
-      <var>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Incorrect, try again.</p>
-          </feedback>
-        </condition>
-        <condition number="[3, 3]">
-          <feedback>
-            <p>Correct, a cell needs 3 neighbors to stay alive.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*three\s*$">
-          <feedback>
-            <p>
-              <term>Please give the numeral not the spelling.</term>
-            </p>
-          </feedback>
-        </condition>
-      </var>
+      <condition number="3">
+        <feedback>
+          <p>Correct.</p>
+        </feedback>
+      </condition>
+      <condition string="^\s*three\s*$" case="insensitive">
+        <feedback>
+          <p>Please give the numeral, not the spelling.</p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect.</p>
+        </feedback>
+      </condition>
+    </var>
+
+    <var>
+     <condition number="3">
+        <feedback>
+          <p>Correct, a dead cell needs exactly 3 neighbors to become alive.</p>
+        </feedback>
+      </condition>
+      <condition string="^\s*three\s*$" case="insensitive">
+        <feedback>
+          <p>Please give the numeral, not the spelling.</p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>Incorrect, try again.</p>
+        </feedback>
+      </condition>
+    </var>
+
     </setup>
+
   </exercise>
   <exercise label="q7_2">
     <statement>
