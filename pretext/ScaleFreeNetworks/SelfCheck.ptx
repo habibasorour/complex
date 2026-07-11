@@ -63,13 +63,11 @@
       </choice>
     </choices>
   </exercise>
+
   <exercise>
     <statement>
-      <p>According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks. <var/>  <var/>  <var/>  <var/>  <var/>  </p>
-    </statement>
-    <setup>
-      <var>
-        <p>
+      <p>According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks.</p>
+       <p>
           <term>Word Bank:</term>
         </p>
         <table>
@@ -82,54 +80,65 @@
             </row>
           </tabular>
         </table>
-      </var>
+ <p>In a system, S, we see something <BlankNode/><var/>, that warrants explanation.
+We construct a model, that is analogous to <BlankNode/><var/>. 
+By simulation or mathematical derivation, we show that the model exhibits a <BlankNode/><var/>.
+We conclude that System exhibits Observable because System is similar to Model, Model exhibits Behavior, and <BlankNode/> <var/> is similar to <BlankNode/> <var/>. </p>
+
+    </statement>
+<setup>
       <var>
-        <p>In a system, S, we see something <BlankNode/> , that warrants explanation.
-We construct a model, that is analogous to <BlankNode/>
-By simulation or mathematical derivation, we show that the model exhibits a <BlankNode/>
-We conclude that System exhibits Observable because System is similar to Model, Model exhibits Behavior, and <BlankNode/> is similar to <BlankNode/></p>
-        <condition string="^\s*observable\s*$">
+        <condition string="^\s*[Oo]bservable\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
         </condition>
-      </var>
-      <var>
-        <condition string="^\s*x\s*$">
+        <condition string=".*">
           <feedback>
             <p>Incorrect</p>
           </feedback>
         </condition>
-        <condition string="^\s*system\s*$">
+      </var>
+
+      <var>
+        <condition string="^\s*[Ss]ystem\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
         </condition>
-      </var>
-      <var>
-        <condition string="^\s*x\s*$">
+        <condition string=".*">
           <feedback>
             <p>Incorrect</p>
           </feedback>
         </condition>
-        <condition string="^\s*behavior\s*$">
+      </var>
+
+      <var>
+        <condition string="^\s*[Bb]ehavior\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
         </condition>
-      </var>
-      <var>
-        <condition string="^\s*x\s*$">
+        <condition string=".*">
           <feedback>
             <p>Incorrect</p>
           </feedback>
         </condition>
-        <condition string="^\s*Behavior\s*$">
+      </var>
+
+      <var>
+        <condition string="^\s*[Bb]ehavior\s*$">
           <feedback>
             <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect</p>
           </feedback>
         </condition>
       </var>
     </setup>
+
   </exercise>
 </section>
