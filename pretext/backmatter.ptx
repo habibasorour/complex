@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
+	<title>Appendices</title>
+
+  <section xml:id="appendix1_installing-anaconda">
+  <title>Installing Juypter Notebooks through Anaconda</title>
+  <p>If you don't already have Jupyter, it is a Python distribution that contains everything you need for the companion code for this book.
+            It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other
+            Python installations.</p>
+  <p>Information about installing Anaconda is here: <url href="https://www.anaconda.com/products/individual" visual="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</url></p>
+  <p>The code for this book works in Python 3.</p>
+  <p>When you install Anaconda, you should get Jupyter by default, but if not, run</p>
+  <pre>conda install jupyter</pre>
+  <p>Once you have Jupyter, you can get Allen Downey's code from this Git repository on Github. If you have a Git client installed, you should be able to download it by running:</p>
+  <pre>git clone https://github.com/AllenDowney/ThinkComplexity2.git</pre>
+  <p>It should create a directory named ThinkComplexity2. Otherwise you can download the repository in this zip file and unzip it.</p>
+  <p>Then cd into the new directory:</p>
+  <pre>cd ThinkComplexity2</pre>
+  <p>To make sure you have the packages you need, you can use environment.yml to create a Conda environment named complexity.</p>
+  <pre>conda env create -f environment.yml</pre>
+  <p>Then activate the new environment</p>
+  <pre>conda activate complexity</pre>
+  <p>To start Jupyter, run:</p>
+  <pre>cd code
+jupyter notebook</pre>
+  <p>Jupyter should launch your default browser or open a tab in an existing browser window. If not, the Jupyter server should print a URL you can use. For example, you will likely get something like:</p>
+  <pre>~/ThinkComplexity2$ jupyter notebook
+[I 10:03:20.115 NotebookApp] Serving notebooks from local directory: /home/downey/ThinkComplexity2
+[I 10:03:20.115 NotebookApp] 0 active kernels
+[I 10:03:20.115 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/
+[I 10:03:20.115 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).</pre>
+  <p>In this case, the URL is <url href="http://localhost:8888" visual="http://localhost:8888">http://localhost:8888</url>.
+            When you start your server, you might get a different URL. Whatever it is, if you paste it into a browser, you should should see a home page with a list of the notebooks in the repository.</p>
+  <p>Click on chap09.ipynb. It should open the notebook for Chapter 9.</p>
+  <p>Select the cell with the import statements and press <q>Shift-Enter</q> to run the code in the cell. If it works and you get no error messages, you are all set.</p>
+  <p>If you get error messages about missing packages, you can install the packages you need using your package manager, or install Anaconda.</p>
+  <p>If you have trouble with the animations, you might have to install ffmpeg. The animations are not necessary for the text.</p>
+</section>
+
+<section xml:id="appendix2_getting-started-with-colab">
+  <title>Getting Started With Google Colab</title>
+  <p>Follow these guidelines on how to use Colab to use the Jupyter notebooks without installing Anaconda.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Go to this link <url href="https://colab.research.google.com/" visual="https://colab.research.google.com/">https://colab.research.google.com/</url></p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    <ul>
+      <li>
+        <p>If you are already signed in to a google account skip to step 4.</p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Once the page with Welcome to Colaboratory opens press the blue <term>Sign In</term> button in the top right corner of the screen</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="GettingStartedWithColab_figure_1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sign in button.</caption>
+<image source="Appendix2/Figures/sign_in.png" width="50%" alt="&quot;Sign in button.&quot;">
+      <shortdescription>Sign in button on Colaboratory welcome page.</shortdescription>
+      <description>
+        <p>This screenshot shows the Google Colaboratory "Welcome to Colaboratory" interface. A central pop-up dialog is visible, featuring tabs such as 'Examples', 'Recent', 'Google Drive', 'GitHub', and 'Upload'.</p>
+        <p>The main point of focus, as indicated by the instructional text, is the blue 'Sign In' button located in the top right corner of the browser window, distinct from the central pop-up dialog.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Sign into your Gmail account as you would normally.</p>
+      </li>
+      <li>
+        <p>A box with an orange overlay should appear, please select the tab that says Github.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="GettingStartedWithColab_figure_2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Pop up after sign in.</caption>
+<image source="Appendix2/Figures/Github.png" width="50%" alt="&quot;Pop up after sign in.&quot;">
+      <shortdescription>Google Colab 'Open notebook' pop-up with GitHub tab.</shortdescription>
+      <description>
+        <p>The screenshot displays the Google Colaboratory pop-up dialog titled 'Open notebook'. This dialog has a distinctive orange upper border and presents several tabs for sourcing notebooks: 'Examples', 'Recent', 'Google Drive', 'GitHub', and 'Upload'.</p>
+        <p>The 'GitHub' tab is the relevant tab for the current instruction. Below 'GitHub' tabs, an input field is visible, typically labeled 'Enter a GitHub URL or search by organization or user', ready for input.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If the box doesn't appear go to file and click open notebook. <term>Do not click on new notebook</term>.</p>
+      </li>
+    </ul>
+  </p>
+  <figure align="center" xml:id="GettingStartedWithColab_figure_3">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Opening a notebook through file.</caption>
+<image source="Appendix2/Figures/File.png" width="50%" alt="&quot;Opening a notebook through file.&quot;">
+      <shortdescription>Google Colab 'File' menu showing 'Open notebook' option.</shortdescription>
+      <description>
+        <p>This screenshot captures a portion of the Google Colaboratory user interface, with the 'File' menu opened. The dropdown 'File' menu lists various actions that can be performed.</p>
+        <p>Highlighted by the instructional context is the 'Open notebook...' option within this menu, please click it. Other standard file operations like 'New notebook', 'Upload notebook...', 'Save a copy in Drive', etc., are also visible in the list.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If you are trying to access a private repository be sure to check the box in the top right corner to include private repositories.</p>
+      </li>
+      <li>
+        <p>If you are trying to access a private repository you will need to sign into your github account.</p>
+      </li>
+    </ul>
+  </p>
+  <figure align="center" xml:id="GettingStartedWithColab_figure_4">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The github authorization pop up.</caption>
+<image source="Appendix2/Figures/Github_authorization.png" width="50%" alt="&quot;The github authorization pop up.&quot;">
+      <shortdescription>GitHub authorization pop-up for Google Colaboratory access.</shortdescription>
+      <description>
+        <p>The screenshot shows a GitHub authorization pop-up window. This window is titled 'Authorize Google Colaboratory' and features the Google Colaboratory application icon.</p>
+        <p>The dialog requests permission for Google Colaboratory to access the user's GitHub account data. After filling in basic information like username and password, please click the button, typically green and labeled 'Sign in [username]' or 'Authorize application', is displayed for the user to grant these permissions.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Please enter the following URL in the blank provided: <url href="https://github.com/pearcej/complex-colab.git" visual="https://github.com/pearcej/complex-colab.git">https://github.com/pearcej/complex-colab.git</url></p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id5">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5: Link for repo.</caption>
+<image source="Appendix2/Figures/Repo_link.png" width="50%" alt="&quot;Link for repo.&quot;">
+      <shortdescription>Google Colab 'GitHub' tab with repository URL entered.</shortdescription>
+      <description>
+        <p>This screenshot focuses on the Google Colaboratory 'Open notebook' dialog, with the 'GitHub' tab active. The input field labeled 'Enter a GitHub URL or search by organization or user' is active now.</p>
+        <p>The URL 'https://github.com/pearcej/complex-colab.git', which could be different in your case, is shown typed into this field. A search icon (magnifying glass), enter key, or similar button is typically present to the right of the input field to initiate the search for the repository. Please click it.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Hit enter or click beside the word path. It may take a moment to think but a menu should appear below.</p>
+      </li>
+      <li>
+        <p>There should be a drop down box right underneath the line that you just put the URL in. Open the drop down box and find the complex/colab repository and click on it to open.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id6">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6: Repo drop down menu.</caption>
+<image source="Appendix2/Figures/repo_drop_down.png" width="50%" alt="&quot;Repo drop down menu.&quot;">
+      <shortdescription>Repository dropdown menu in Google Colab's GitHub interface.</shortdescription>
+      <description>
+        <p>The screenshot shows a section of Google Colaboratory's 'Open notebook' interface, specifically after a GitHub URL has been processed. Below the URL input area, a 'Repository' dropdown menu is visible.</p>
+        <p>This dropdown menu is either shown as open or is the element to be interacted with, from which the user is expected to select the specific repository, such as 'pearcej/complex-colab' (implied by previous steps), to view its contents.</p>
+      </description>
+    </image>  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If the Repo doesn't show up the first time you might have to close the tab and reopen Google Colab.</p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Scroll and find the Jupyter notebook that needs to be opened.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id7">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7: List of the notebooks.</caption>
+<image source="Appendix2/Figures/Repo.png" width="50%" alt="&quot;List of the notebooks.&quot;">
+      <shortdescription>List of Jupyter notebooks within a repository in Google Colab.</shortdescription>
+      <description>
+        <p>This screenshot displays the file browser area within Google Colaboratory's 'Open notebook' dialog, after a GitHub repository has been selected. A list of files and folders within that repository is shown.</p>
+        <p>The list predominantly features Jupyter notebooks (identifiable by icons or .ipynb extensions). The user is expected to navigate or scroll through this list to locate and select the desired notebook file to open.</p>
+      </description>
+    </image>  </figure>
+  <p>This should get you to the point where you can start to explore Colab and use it for class and homework.</p>
+  <figure align="center" xml:id="id8">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8: Chapter 2 notebook opened up.</caption>
+<image source="Appendix2/Figures/opened_repo.png" width="50%" alt="&quot;Chapter 2 notebook opened up.&quot;">
+      <shortdescription>An opened Jupyter notebook (e.g., Chapter 2) in Google Colaboratory.</shortdescription>
+      <description>
+        <p>The screenshot shows the main Google Colaboratory interface with a Jupyter notebook successfully opened and loaded. The caption identifies this as the 'Chapter 2 notebook'.</p>
+        <p>Visible elements include the notebook's title, cells containing code or text, a menu bar ('File', 'Edit', 'View', etc.) at the top, and a toolbar with common notebook operations. This image confirms the final step of opening a notebook.</p>
+      </description>
+    </image>  </figure>
+</section>
+
+<section xml:id="appendix2_tips-and-tricks">
+  <title>Tips and Tricks</title>
+  <p>Below are a few useful things that can help with the use of Google Colab.</p>
+  <p>Run all</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + F9</p>
+      </li>
+    </ul>
+  </p>
+  <p>Save</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + S</p>
+      </li>
+    </ul>
+  </p>
+  <p>Undo</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + Z</p>
+      </li>
+    </ul>
+  </p>
+  <p>Show all key commands</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + M + H</p>
+      </li>
+    </ul>
+  </p>
+  <p>Make a copy of the notebook, and then:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Hit add a copy to my drive.</p>
+      </li>
+      <li>
+        <p>Although Colab does allow multiple people to be on the same document and to edit it together, the document does not update in real time, so to make use of the software and be sure to be sure to practice good pair programming.</p>
+      </li>
+    </ul>
+  </p>
+</section>
+
+
+</backmatter>
+
+
+  
