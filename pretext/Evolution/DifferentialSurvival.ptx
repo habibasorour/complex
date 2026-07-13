@@ -15,7 +15,7 @@
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with differential survival.</caption>
     <image source="Evolution/Figures/DIF_SURVIVE_FIT.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with differential survival.&quot;"/>
   </figure>
-  <p><xref ref="evo-fig-2"/> shows mean fitness over time for 10 simulations with differential survival. Mean fitness increases quickly at first, but then levels off.</p>
+  <p><xref ref="DifferentialSurvival_figure_1"/> shows mean fitness over time for 10 simulations with differential survival. Mean fitness increases quickly at first, but then levels off.</p>
   <p>You can probably figure out why it levels off: if there is only one agent at a particular location and it dies, it leaves that location unoccupied. Without mutation, there is no way for it to be occupied again.</p>
   <p>With <c>N=8</c>, this simulation starts with 256 agents occupying all possible locations. Over time, the number of occupied locations decreases; if the simulation runs long enough, eventually all agents will occupy the same location.</p>
   <p>So this simulation starts to explain adaptation: increasing fitness means that the species is getting better at surviving in its environment. But the number of occupied locations decreases over time, so this model does not explain increasing diversity at all.</p>

@@ -4,6 +4,7 @@
   <title>Algorithm Analysis Examples</title>
   <subsection xml:id="algorithm-analysis_an-anagram-detection-example">
     <title>An Anagram Detection Example</title>
+    <introduction>
     <p>A good example problem for showing algorithms with different orders of
                 magnitude is the classic anagram detection problem for strings sometimes
                 called the anagram detection problem. One
@@ -14,6 +15,7 @@
                 equal length and that they are made up of symbols from the set of 26
                 lowercase alphabetic characters. Our goal is to write a Boolean function
                 that will take two strings and return whether they are anagrams.</p>
+    </introduction>
     <subsubsection xml:id="algorithm-analysis_solution-1-checking-off">
       <title>Solution 1: Checking Off</title>
       <p>Our first solution to the anagram problem will check the lengths of the

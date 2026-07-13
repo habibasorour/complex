@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="algorithm-analysis_what-is-algorithm-analysis">
   <title>What Is Algorithm Analysis?</title>
+  <introduction>
   <p>It is very common for beginning computer science students to
             compare their programs with one another. You may also have noticed that
             it is common for computer programs to look very similar, especially the
@@ -158,6 +159,7 @@ main()
       </var>
     </setup>
   </exercise>
+  </introduction>
   <subsection xml:id="algorithm-analysis_some-needed-math-notation">
     <title>Some Needed Math Notation</title>
     <p>This is the sigma symbol: <md>\sum_{}</md>
