@@ -3,11 +3,11 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode/>. <var/>  </p>
+      <p>The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode/><var/> .   </p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*acceleration\s*$">
+        <condition string="^\s*[Aa]cceleration\s*$">
           <feedback>
             <p>Correct, they had control over speed!</p>
           </feedback>
@@ -20,6 +20,7 @@
       </var>
     </setup>
   </exercise>
+
   <exercise label="SC11_Q2">
     <statement>
       <p>Agents in the <q>Flocks, herds, and schools</q> model are called boids. Name the behaviors that each agent simulates in this model.</p>
