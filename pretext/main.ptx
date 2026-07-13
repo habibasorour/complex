@@ -23,8 +23,11 @@
     <xi:include href="./HerdsFlocksAndTrafficJams/toctree.ptx"/>
     <xi:include href="./Evolution/toctree.ptx"/>
     <xi:include href="./EvolutionOfCooperation/toctree.ptx"/>
-    <xi:include href="./Appendix1/toctree.ptx"/>
-    <xi:include href="./Appendix2/toctree.ptx"/>
+  <!--  <xi:include href="./Appendix1/toctree.ptx"/> -->
+  <!--  <xi:include href="./Appendix2/toctree.ptx"/> -->
+
+     <!-- Include frontmatter -->
+    <xi:include href="./backmatter.ptx"/>
     
     
     <backmatter>
