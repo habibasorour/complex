@@ -27,7 +27,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>If you wanted to make a hypotheses that could never be proven wrong you would want to make a <BlankNode/> hypothesis. <var/>  </p>
+      <p>If you wanted to make a hypotheses that could never be proven wrong you would want to make a <BlankNode/><var/> hypothesis.   </p>
     </statement>
     <setup>
       <var>
