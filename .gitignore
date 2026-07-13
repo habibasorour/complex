@@ -9,3 +9,9 @@ build
 sphinx-enki-info.txt
 sphinx_settings.json
 pavement.py
+
+# Local/generated artifacts
+.cache/
+.error_schema.log
+logs/
+output/
