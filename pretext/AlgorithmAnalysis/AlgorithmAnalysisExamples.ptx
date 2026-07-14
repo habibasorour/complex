@@ -68,11 +68,11 @@ main()
             </program>
           </listing>
         
-      <p>To analyze this algorithm, we need to note that each of the <em>n</em>
-                    characters in <c>s1</c> will cause an iteration through up to <em>n</em>
-                    characters in the array from <c>s2</c>. Each of the <em>n</em> positions in the
+      <p>To analyze this algorithm, we need to note that each of the <m>n</m>
+                    characters in <c>s1</c> will cause an iteration through up to <m>n</m>
+                    characters in the array from <c>s2</c>. Each of the <m>n</m> positions in the
                     array will be visited once to match a character from <c>s1</c>. The number
-                    of visits then becomes the sum of the integers from 1 to <em>n</em>. We stated
+                    of visits then becomes the sum of the integers from 1 to <m>n</m>. We stated
                     earlier that this can be written as:</p>
 
   <p>
@@ -128,8 +128,7 @@ main()
       <p>At first glance you may be tempted to think that this algorithm is
                     <m>O(n)</m>, since there are three consecutive simple iterations:
                     the first two to convert strings to char arrays and the last
-                    to compare the <em>n</em>
-                    characters after the sorting process. Sorting is typically either
+                    to compare the <m>n</m> characters after the sorting process. Sorting is typically either
                     <m>O(n^{2})</m> or <m>O(n\log n)</m>, so the sorting operations
                     dominate the iteration. In the end, this algorithm will have the
                     same order of magnitude as that of the sorting process.</p>
@@ -141,17 +140,17 @@ main()
                     simply generate an array of all possible strings using the characters from
                     <c>s1</c> and then see if <c>s2</c> occurs. However, there is a difficulty
                     with this approach. When generating all possible strings from <c>s1</c>,
-                    there are <em>n</em> possible first characters, <m>n-1</m> possible
+                    there are <m>n</m> possible first characters, <m>n-1</m> possible
                     characters for the second position, <m>n-2</m> for the third, and so
                     on. The total number of candidate strings is
-                    <m>n*(n-1)*(n-2)*...*3*2*1</m>, which is <m>n!</m>. Although some
+                    <md>n*(n-1)*(n-2)*...*3*2*1</md>, which is <m>n!</m>. Although some
                     of the strings may be duplicates, the program cannot know this ahead of
                     time and so it will still generate <m>n!</m> different strings.</p>
       <p>It turns out that <m>n!</m> grows even faster than <m>2^{n}</m> as
-                    <em>n</em> gets large. In fact, if <c>s1</c> were 20 characters long, there would
-                    be <m>20!=2,432,902,008,176,640,000</m> possible candidate strings.
+                    <m>n</m> gets large. In fact, if <c>s1</c> were 20 characters long, there would
+                    be <md>20!=2,432,902,008,176,640,000 \text{ possible strings} </md> 
                     If we processed one possibility every second, it would take us
-                    77,146,816,596 years to go through the entire array. This is probably not
+                    <md> 77,146,816,596 \text{ years} </md> to go through the entire array. This is probably not
                     going to be a good solution.</p>
     </subsubsection>
     <subsubsection xml:id="algorithm-analysis_solution-4-count-and-compare">
@@ -203,10 +202,10 @@ main()
         
       <p>Again, the solution has a number of iterations. However, unlike the
                     first solution, none of them are nested. The first two iterations used
-                    to count the characters are both based on <em>n</em>. The third iteration,
+                    to count the characters are both based on <m>n</m>. The third iteration,
                     comparing the two arrays of counts, always takes 26 steps since there are
                     26 possible characters in the strings. Adding it all up gives us
-                    <m>T(n)=2n+26</m> steps. That is <m>O(n)</m>. We have found a
+                    <md>T(n)=2n+26 \text{ steps} </md> That is <m>O(n)</m>. We have found a
                     linear order of magnitude algorithm for solving this problem.</p>
       <p>Before leaving this example, we need to say something about space
                     requirements. Although the last solution was able to run in linear time,
@@ -246,28 +245,28 @@ main()
     <p>Applying the Brute Force solution to the Traveling Salesperson problem is a really terrible idea.
                 an algorithm is said to scale well or be scalable if it is suitably efficient
                 and practical when applied to an input with a large n, and brute force does not scale
-                at all well because n = 28 is quite a small number.</p>
+                at all well because <m>n = 28</m> is quite a small number.</p>
     <p>As we know a <term>brute force</term> technique for solving a problem typically tries to exhaust all possibilities for our salesperson, that means trying every set of routes and checking the path distance.
                 Like the anagram detection example, the total number of paths that a salesperson could try is
-                <m>n*(n-1)*(n-2)*...*3*2*1</m>, which is <m>n!</m> because they have to choose
+                <md>n*(n-1)*(n-2)*...*3*2*1</md>, which is <m>n!</m> because they have to choose
                 a first city from the <m>n</m> choices,
                 then there are only <m>n-1</m> choices for the next city.
                 Then <m>n-2</m> choices for the third etc. That is <m>O(n!)</m>.</p>
     <p>Using brute force to solve this problem requires we check the 27 factorial ways
                 for the salesperson to consider traveling to each country.
-                This means that there are 10,888,869,450,418,352,160,768,000,000
-                possible paths for the salesperson to check to travel when using the brute force solution.</p>
+                This means that there are <md> 10,888,869,450,418,352,160,768,000,000 
+                \text{ possible paths} </md> for the salesperson to check to travel when using the brute force solution.</p>
     <p>Some of the fastest readily available processors currently are around 5GHz, where 1GHz represents
                 1 billion cycles per second.
                 If you could do two computations in a cycle,
-                then a computation would take 2/5,000,000,000 seconds which equals 0.0000000004 seconds.
+                then a computation would take <md>  \frac{2}{5,000,000,000} \text{ seconds} </md> which equals <md> 0.0000000004 \text{ seconds} </md>.
                 We can call this computation rate.
                 Note that processors typically take more than one cycle to complete an instruction,
                 but for the last decade or so most processors have been multicore&#x2026;
                 So, this is a rough estimate. Next you should take, computation rate times
                 number of paths to give the amount of time in seconds,
-                then divide that by the number of seconds in a year <m>((24*60)*60)*365</m>.
-                It would take 345,283,785,211,134,961,972.6 years for the
+                then divide that by the number of seconds in a year <md>((24*60)*60)*365</md>.
+                It would take <md> 345,283,785,211,134,961,972.6 \text{ years} </md> for the
                 Brute Force Solution to find the shortest path for our salesperson.
                 If you have 6 or 12 cores, you can just multiply by three or six, but that is
                 clearly not going to help us a lot.</p>
@@ -307,7 +306,7 @@ for i in range(n):
         <choices>
           <choice>
             <statement>
-              <p>O(n)</p>
+              <p><m>O(n)</m></p>
             </statement>
             <feedback>
               <p>No. In an example like this you want to count the nested loops, especially the loops that are dependent on the same variable, in this case, n.</p>
@@ -315,23 +314,23 @@ for i in range(n):
           </choice>
           <choice correct="yes">
             <statement>
-              <p>O(n<sup>2</sup>)</p>
+              <p><m>O(n^2)</m></p>
             </statement>
             <feedback>
-              <p>Right! A nested loop like this is O(n<sup>2</sup>).</p>
+              <p>Right! A nested loop like this is O(n^2).</p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(log n)</p>
+              <p><m>O(\log n)</m></p>
             </statement>
             <feedback>
-              <p>No. log n typically is indicated when the problem is iteratively made smaller</p>
+              <p>No. <m>O(\log n)</m> typically is indicated when the problem is iteratively made smaller</p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(n<sup>3</sup>)</p>
+              <p><m>O(n^3)</m></p>
             </statement>
             <feedback>
               <p>No. In an example like this you want to count the nested loops. especially the loops that are dependent on the same variable, in this case, n.</p>
@@ -359,15 +358,15 @@ for j in range(n):
         <choices>
           <choice correct="yes">
             <statement>
-              <p>O(n)</p>
+              <p><m>O(n)</m></p>
             </statement>
             <feedback>
-              <p>Right! Even though there are two loops they are not nested.  You might think of this as O(2n) but we can ignore the constant 2.</p>
+              <p>Right! Even though there are two loops they are not nested.  You might think of this as  <m>O(2n)</m> but we can ignore the constant 2.</p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(n<sup>2</sup>)</p>
+              <p><m>O(n^2)</m></p>
             </statement>
             <feedback>
               <p>No. Be careful, in counting loops you want to look carefully at whether or not the loops are nested.</p>
@@ -375,15 +374,15 @@ for j in range(n):
           </choice>
           <choice>
             <statement>
-              <p>O(log n)</p>
+              <p><m>O(\log n)</m></p>
             </statement>
             <feedback>
-              <p>No. log n typically is indicated when the problem is iteratively made smaller.</p>
+              <p>No. <m>O(\log n)</m> typically is indicated when the problem is iteratively made smaller.</p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(n<sup>3</sup>)</p>
+              <p><m>O(n^3)</m></p>
             </statement>
             <feedback>
               <p>No. Be careful, in counting loops you want to look carefully at whether or not the loops are nested.</p>
@@ -408,15 +407,15 @@ while i &gt; 0:
         <choices>
           <choice>
             <statement>
-              <p>O(n)</p>
+              <p><m>O(n)</m></p>
             </statement>
             <feedback>
-              <p>No. Look carefully at the loop variable i.  Notice that the value of i is cut in half each time through the loop.  This is a big hint that the performance is better than O(n)</p>
+              <p>No. Look carefully at the loop variable i.  Notice that the value of i is cut in half each time through the loop.  This is a big hint that the performance is better than <m>O(n)</m></p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(n<sup>2</sup>)</p>
+              <p><m>O(n^2)</m></p>
             </statement>
             <feedback>
               <p>No. Check again, is this a nested loop?</p>
@@ -424,15 +423,15 @@ while i &gt; 0:
           </choice>
           <choice correct="yes">
             <statement>
-              <p>O(log n)</p>
+              <p><m>O(\log n)</m></p>
             </statement>
             <feedback>
-              <p>Right! The value of i is cut in half each time through the loop so it will only take log n iterations.</p>
+              <p>Right! The value of i is cut in half each time through the loop so it will only take <m> \log n </m> iterations.</p>
             </feedback>
           </choice>
           <choice>
             <statement>
-              <p>O(n<sup>3</sup>)</p>
+              <p><m>O(n^3)</m></p>
             </statement>
             <feedback>
               <p>No. Check again, is this a nested loop?</p>
@@ -454,12 +453,12 @@ while i &gt; 0:
             </condition>
             <condition number="16">
               <feedback>
-                <p>That would be 2n, which would be simplified as n.</p>
+                <p>That would be <m>2n</m>, which would be simplified as <m>n</m>.</p>
               </feedback>
             </condition>
             <condition number="8">
               <feedback>
-                <p>That would be n.</p>
+                <p>That would be <m>n</m>.</p>
               </feedback>
             </condition>
             <condition string="^\s*.*\s*$">
