@@ -30,10 +30,47 @@
   <p>On the other hand, the clustering coefficient, <c>C</c>, is <m>0.037</m>, not even close to the value in the dataset, <m>0.61</m>. So that's a problem.</p>
   <p><xref ref="sfn-fig-tbl-1"/> summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.</p>
   <p>In the exercises at the end of this chapter, you can explore other models intended to capture all of these characteristics.</p>
-  <figure align="center" xml:id="sfn-fig-tbl-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Table 6.1: Characteristics of the Facebook dataset compared to two models.</caption>
-    <image source="ScaleFreeNetworks/Figures/Table1.PNG" width="50%" alt="&quot;Table 6.1: Characteristics of the Facebook dataset compared to two models.&quot;"/>
-  </figure>
+  <table xml:id="sfn-fig-tbl-1">
+    <title>Characteristics of the Facebook dataset compared to two models.</title>
+    <tabular>
+      <row header="yes">
+        <cell></cell>
+        <cell>Facebook</cell>
+        <cell>WS model</cell>
+        <cell>BA model</cell>
+      </row>
+      <row>
+        <cell>C</cell>
+        <cell>0.61</cell>
+        <cell>0.63</cell>
+        <cell>0.037</cell>
+      </row>
+      <row>
+        <cell>L</cell>
+        <cell>3.69</cell>
+        <cell>3.23</cell>
+        <cell>2.51</cell>
+      </row>
+      <row>
+        <cell>Mean degree</cell>
+        <cell>43.7</cell>
+        <cell>44</cell>
+        <cell>43.7</cell>
+      </row>
+      <row>
+        <cell>Std degree</cell>
+        <cell>52.4</cell>
+        <cell>1.5</cell>
+        <cell>40.1</cell>
+      </row>
+      <row>
+        <cell>Power law?</cell>
+        <cell>maybe</cell>
+        <cell>no</cell>
+        <cell>yes</cell>
+      </row>
+    </tabular>
+  </table>
   <exercise>
     <statement>
       <p>The 3 features that distinguish a BA model from a WS model are <BlankNode/> <var/>, <BlankNode/><var/>, and a degree distribution that obeys a <BlankNode/><var/>. </p>
