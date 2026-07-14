@@ -120,11 +120,12 @@
             order to decide which of these functions is the dominant part of any
             <m>T(n)</m> function, we must see how they compare with one another
             as <em>n</em> gets large.</p>
+
   <table xml:id="algorithm-analysis_id1">
+  <title>
+        <term>Common Big-O Functions</term>
+  </title>
     <tabular>
-      <title>
-        <term>Table 1: Common Big-O Functions</term>
-      </title>
       <row header="yes">
         <cell>
           <term>f(n)</term>
