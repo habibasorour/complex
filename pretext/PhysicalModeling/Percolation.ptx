@@ -26,7 +26,7 @@
   <p>Two questions of interest regarding percolation are (1) the probability that a random array contains a percolating cluster, and (2) how that probability depends on <c>q</c>. These questions might remind you of <xref ref="graphs_random"/> where we considered the probability that a random Erd&#x151;s-R&#xE9;nyi graph is connected. We will see several connections between that model and this one.</p>
   <exercise>
     <statement>
-      <p><BlankNode/> is the probability that a cell is porus initially <var/>  </p>
+      <p><BlankNode/> <var/> is the probability that a cell is porus initially </p>
     </statement>
     <setup>
       <var>
