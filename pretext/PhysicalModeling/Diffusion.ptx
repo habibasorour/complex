@@ -35,11 +35,11 @@
   </exercise>
   <exercise>
     <statement>
-      <p>The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between <BlankNode/> and <BlankNode/>. <em>Please write the answer in numeral</em>. <var/>  <var/>  </p>
+      <p>The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between <BlankNode/> <var/> and <BlankNode/> <var/>. <em>Please write the answer in numeral</em>.  </p>
     </statement>
     <setup>
       <var>
-        <condition number="[0, 0]">
+        <condition number="0">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -56,7 +56,7 @@
         </condition>
       </var>
       <var>
-        <condition number="[1, 1]">
+        <condition number="1">
           <feedback>
             <p>Correct.</p>
           </feedback>
