@@ -32,7 +32,11 @@
       </match>
       <match order="4">
         <premise>Power Law</premise>
-        <response>A distribution follows this law if :math:`PMF(k) &#x223C; k&#x2212;&#x3B1;` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``&#x3B1;`` is a parameter, and the symbol &#x223C; indicates that the ``PMF`` is asymptotic to ``k&#x2212;&#x3B1;`` as ``k`` increases.</response>
+        <response>A distribution follows this law if <me>P(k) \sim k^{-\alpha}</me>
+  where <m>P(k)</m> is the fraction of nodes with degree <m>k</m>, 
+  <m>\alpha</m> is a parameter, and the symbol <m>\sim</m> 
+  indicates that the PMF is asymptotic to <m>k^{-\alpha}</m> 
+  as <m>k</m> increases.</response>
       </match>
       <match order="5">
         <premise>Preferential Attachment</premise>
@@ -48,7 +52,7 @@
       </match>
       <match order="8">
         <premise>Complementary CDF</premise>
-        <response>:math:`CCDF(x) &#x2261; 1 - CDF(x)`</response>
+        <response><me>CCDF(x) \equiv 1 - CDF(x)</me></response>
       </match>
       <match order="9">
         <premise>Explanatory Models</premise>
