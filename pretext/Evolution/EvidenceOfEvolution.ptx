@@ -33,13 +33,13 @@ sim.run()</pre>
   <p>
     <ul>
       <li>
-        <p><term>Adaptation</term>: Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance. Many features of natural systems seem as if they were designed.</p>
+        <p><idx>adaptation</idx><term>Adaptation</term>: Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance. Many features of natural systems seem as if they were designed.</p>
       </li>
       <li>
-        <p><term>Increasing diversity</term>: Over time the number of species on earth has generally increased (despite several periods of mass extinction).</p>
+        <p><idx>increasing diversity</idx>: Over time the number of species on earth has generally increased (despite several periods of mass extinction).</p>
       </li>
       <li>
-        <p><term>Increasing complexity</term>: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.</p>
+        <p><idx>increasing complexity</idx><term>Increasing complexity</term>: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.</p>
       </li>
     </ul>
   </p>

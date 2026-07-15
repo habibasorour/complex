@@ -135,7 +135,7 @@ main()
     </subsubsection>
     <subsubsection xml:id="algorithm-analysis_solution-3-brute-force">
       <title>Solution 3: Brute Force</title>
-      <p>A <term>brute force</term> technique for solving a problem typically tries to
+      <p>A <idx>brute force</idx><term>brute force</term> technique for solving a problem typically tries to
                     exhaust all possibilities. For the anagram detection problem, we can
                     simply generate an array of all possible strings using the characters from
                     <c>s1</c> and then see if <c>s2</c> occurs. However, there is a difficulty
@@ -245,8 +245,8 @@ main()
     <p>Applying the Brute Force solution to the Traveling Salesperson problem is a really terrible idea.
                 an algorithm is said to scale well or be scalable if it is suitably efficient
                 and practical when applied to an input with a large n, and brute force does not scale
-                at all well because <m>n = 28</m> is quite a small number.</p>
-    <p>As we know a <term>brute force</term> technique for solving a problem typically tries to exhaust all possibilities for our salesperson, that means trying every set of routes and checking the path distance.
+                at all well because n = 28 is quite a small number.</p>
+    <p>As we know a <idx>brute force</idx><term>brute force</term> technique for solving a problem typically tries to exhaust all possibilities for our salesperson, that means trying every set of routes and checking the path distance.
                 Like the anagram detection example, the total number of paths that a salesperson could try is
                 <md>n*(n-1)*(n-2)*...*3*2*1</md>, which is <m>n!</m> because they have to choose
                 a first city from the <m>n</m> choices,

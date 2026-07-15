@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="evolution_fitness-landscape">
   <title>Fitness Landscape</title>
-  <p>The function that maps from genotype to fitness is called a <term>fitness landscape</term>. In the landscape metaphor, each genotype corresponds to a location in an <c>N</c>-dimensional space, and fitness corresponds to the <q>height</q> of the landscape at that location.</p>
-  <p>In biological terms, the fitness landscape represents information about how the genotype of an organism is related to its physical form and capabilities, called its <term>phenotype</term>, and how the phenotype interacts with its <term>environment</term>.</p>
+  <p>The function that maps from genotype to fitness is called a <idx>fitness landscape</idx><term>fitness landscape</term>. In the landscape metaphor, each genotype corresponds to a location in an <c>N</c>-dimensional space, and fitness corresponds to the <q>height</q> of the landscape at that location.</p>
+  <p>In biological terms, the fitness landscape represents information about how the genotype of an organism is related to its physical form and capabilities, called its <idx>phenotype</idx><term>phenotype</term>, and how the phenotype interacts with its <idx>environment</idx><term>environment</term>.</p>
   <p>In the real world, fitness landscapes are complicated, but we don't need to build a realistic model. To induce evolution, we need <em>some</em> relationship between genotype and fitness, but it turns out that it can be <em>any</em> relationship. To demonstrate this point, we'll use a totally random fitness landscape.</p>
   <p>Here is the definition for a class that represents a fitness landscape:</p>
   <pre>class FitnessLandscape:
@@ -16,7 +16,7 @@
         fs = np.where(loc, self.one_values,
                         self.zero_values)
         return fs.mean()</pre>
-  <p>The genotype of an agent, which corresponds to its location in the fitness landscape, is represented by a NumPy array of zeros and ones called <c>loc</c>. The fitness of a given genotype is the mean of <c>N</c> <term>fitness contributions</term>, one for each element of <c>loc</c>.</p>
+  <p>The genotype of an agent, which corresponds to its location in the fitness landscape, is represented by a NumPy array of zeros and ones called <c>loc</c>. The fitness of a given genotype is the mean of <c>N</c> <idx>fitness contributions</idx><term>fitness contributions</term>, one for each element of <c>loc</c>.</p>
   <p>To compute the fitness of a genotype, <c>FitnessLandscape</c> uses two arrays: <c>one_values</c>, which contains the fitness contributions of having a 1 in each element of <c>loc</c>, and <c>zero_values</c>, which contains the fitness contributions of having a 0.</p>
   <p>The <c>fitness</c> method uses <c>np.where</c> to select a value from <c>one_values</c> where <c>loc</c> has a 1, and a value from <c>zero_values</c> where <c>loc</c> has a 0.</p>
   <p>As an example, suppose <c>N=3</c> and</p>

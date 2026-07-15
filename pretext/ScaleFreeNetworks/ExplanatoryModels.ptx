@@ -11,7 +11,7 @@
       </description>
     </image>  </figure>
   <p>We started the discussion of networks with Milgram's Small World Experiment, which shows that path lengths in social networks are surprisingly small; hence, <q>six degrees of separation</q>.</p>
-  <p>When we see something surprising, it is natural to ask <q>Why?</q> but sometimes it's not clear what kind of answer we are looking for. One kind of answer is an <term>explanatory model</term> (see <xref ref="sfn-fig-6"/>). The logical structure of an explanatory model is:</p>
+  <p>When we see something surprising, it is natural to ask <q>Why?</q> but sometimes it's not clear what kind of answer we are looking for. One kind of answer is an <idx>explanatory model</idx><term>explanatory model</term> (see <xref ref="sfn-fig-6"/>). The logical structure of an explanatory model is:</p>
   <p>
     <ol label="1">
       <li>

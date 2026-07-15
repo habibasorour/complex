@@ -11,5 +11,5 @@
   <p>You should be able to implement this model by inheriting from <c>SugarScape</c> and overriding <c>__init__</c> and <c>step</c>.</p>
   <p><term>Exercise 3:</term>  Among people who study philosophy of mind, <q>Strong AI</q> is the theory that an appropriately-programmed computer could have a mind in the same sense that humans have minds.</p>
   <p>John Searle presented a thought experiment called <q>The Chinese Room</q>, intended to show that Strong AI is false.</p>
-  <p>What is the <term>system reply</term> to the Chinese Room argument? How does what you have learned about emergence influence your reaction to the system response?</p>
+  <p>What is the <idx>system reply</idx><term>system reply</term> to the Chinese Room argument? How does what you have learned about emergence influence your reaction to the system response?</p>
 </exercises>

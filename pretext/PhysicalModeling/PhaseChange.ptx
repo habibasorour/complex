@@ -24,7 +24,7 @@
     return np.mean(t)</pre>
   <p><c>estimate_prob_percolating</c> makes 100 Percolation objects with the given values of <c>n</c> and <c>q</c> and calls <c>test_perc</c> to see how many of them have a percolating cluster. The return value is the fraction of those that have a percolating cluster.</p>
   <p>When <c>p=0.55</c>, the probability of a percolating cluster is near 0. At <c>p=0.60</c>, it is about 70%, and at <c>p=0.65</c> it is near 1. This rapid transition suggests that there is a critical value of <c>p</c> near 0.6.</p>
-  <p>We can estimate the critical value more precisely using a <term>random walk</term>. Starting from an initial value of <c>q</c>, we construct a Percolation object and check whether it has a percolating cluster. If so, <c>q</c> is probably too high, so we decrease it. If not, <c>q</c> is probably too low, so we increase it.</p>
+  <p>We can estimate the critical value more precisely using a <idx>random walk</idx><term>random walk</term>. Starting from an initial value of <c>q</c>, we construct a Percolation object and check whether it has a percolating cluster. If so, <c>q</c> is probably too high, so we decrease it. If not, <c>q</c> is probably too low, so we increase it.</p>
   <p>Here's the code:</p>
   <pre>def find_critical(n=100, q=0.6, iters=100):
     qs = [q]
@@ -37,8 +37,8 @@
         qs.append(q)
     return qs</pre>
   <p>The result is a list of values for <c>q</c>. We can estimate the critical value, <c>q_crit</c>, by computing the mean of this list. With <c>n=100</c> the mean of <c>qs</c> is about <c>0.59</c>; this value does not seem to depend on <c>n</c>.</p>
-  <p>The rapid change in behavior near the critical value is called a <term>phase change</term> by analogy with phase changes in physical systems, like the way water changes from liquid to solid at its freezing point.</p>
-  <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <term>critical phenomena</term>. In the next section, we explore one of them: fractal geometry.</p>
+  <p>The rapid change in behavior near the critical value is called a <idx>phase change</idx><term>phase change</term> by analogy with phase changes in physical systems, like the way water changes from liquid to solid at its freezing point.</p>
+  <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <idx>critical phenomena</idx><term>critical phenomena</term>. In the next section, we explore one of them: fractal geometry.</p>
   <exercise>
     <statement>
       <p>If you wanted to estimate the critical value more precisely you would want to use a <var/>. </p>

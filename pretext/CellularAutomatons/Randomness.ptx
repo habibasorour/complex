@@ -7,7 +7,7 @@
   </figure>
   <p>Class 3 contains CAs that generate randomness. Rule 30 is an example; <xref ref="ca-fig-3"/> shows what it looks like after 100 time steps.</p>
   <p>Along the left side there is an apparent pattern, and on the right side there are triangles in various sizes, but the center seems quite random. In fact, if you take the center column and treat it as a sequence of bits, it is hard to distinguish from a truly random sequence. It passes many of the statistical tests people use to test whether a sequence of bits is random.</p>
-  <p>Programs that produce random-seeming numbers are called <term>pseudo-random number generators</term> (PRNGs). They are not considered truly random because:</p>
+  <p>Programs that produce random-seeming numbers are called <idx>pseudo-random number generators</idx><term>pseudo-random number generators</term> (PRNGs). They are not considered truly random because:</p>
   <blockquote>
     <p>
       <ul>
@@ -15,7 +15,7 @@
           <p>Many of them produce sequences with regularities that can be detected statistically. For example, the original implementation of <c>rand</c> in the C library used a linear congruential generator that yielded sequences with easily detectable serial correlations.</p>
         </li>
         <li>
-          <p>Any PRNG that uses a finite amount of state (that is, storage) will eventually repeat itself. One of the characteristics of a generator is the <term>period</term> of this repetition.</p>
+          <p>Any PRNG that uses a finite amount of state (that is, storage) will eventually repeat itself. One of the characteristics of a generator is the <idx>period</idx><term>period</term> of this repetition.</p>
         </li>
         <li>
           <p>The underlying process is fundamentally deterministic, unlike some physical processes, like radioactive decay and thermal noise, that are considered to be fundamentally random.</p>

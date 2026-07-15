@@ -31,10 +31,11 @@
             important as determining the most dominant part of the <m>T(n)</m>
             function. In other words, as the problem gets larger, some portion of
             the <m>T(n)</m> function tends to overpower the rest. This dominant
-            term is what, in the end, is used for comparison. The <term>order of
-                magnitude</term> function describes the part of <m>T(n)</m> that increases
-            the fastest as the value of <m>n</m> increases. Order of magnitude is often
-            called <term>Big-O notation</term> (for <q>order</q>) and written as
+            term is what, in the end, is used for comparison. The <idx>order of 
+            magnitude</idx><term>order of magnitude</term> function describes the
+            part of <m>T(n)</m> that increases the fastest as the value of <em>n</em>
+            increases. Order of magnitude is often called <idx>big-o notation</idx>
+            <term>Big-O notation</term> (for <q>order</q>) and written as
             <m>O(f(n))</m>. It provides a useful approximation to the actual
             number of steps in the computation. The function <m>f(n)</m> provides
             a simple representation of the dominant part of the original
@@ -107,14 +108,16 @@
   <p>Although we do not see this in the summation example, sometimes the
             performance of an algorithm depends on the exact values of the data
             rather than simply the size of the problem. For these kinds of
-            algorithms we need to characterize their performance in terms of <term>best
-                case</term>, <term>worst case</term>, or <term>average case</term> performance. The worst case
-            performance refers to a particular data set where the algorithm performs
-            especially poorly. Whereas a different data set for the exact same
-            algorithm might have extraordinarily good performance. However, in most
-            cases the algorithm performs somewhere in between these two extremes
-            (average case). It is important for a computer scientist to understand
-            these distinctions so they are not misled by one particular case.</p>
+            algorithms we need to characterize their performance in terms of
+            <idx>best case</idx><term>best case</term>, <idx>worst case</idx>
+            <term>worst case</term>, or <idx>average case</idx> <term>average case</term>
+            performance. The worst case performance refers to a particular data
+            set where the algorithm performs especially poorly. Whereas a different
+            data set for the exact same algorithm might have extraordinarily good
+            performance. However, in most cases the algorithm performs somewhere in
+            between these two extremes (average case). It is important for a computer
+            scientist to understand these distinctions so they are not misled by one
+            particular case.</p>
   <p>A number of very common order of magnitude functions will come up over
             and over as you study algorithms. These are shown in <xref ref="algorithm-analysis_id1"/>. In
             order to decide which of these functions is the dominant part of any
@@ -270,8 +273,8 @@ main()</code>
   <p><xref ref="fig-graphfigure2cpp"/> shows a few of the common Big-O functions as they
             compare with the <m>T(n)</m> function discussed above. Note that
             <m>T(n)</m> is initially larger than the cubic function. However, as
-            <m>n</m> grows, the cubic function quickly overtakes <m>T(n)</m>. It is easy
-            to see that <m>T(n)</m> then follows the quadratic function as
+            n grows, the cubic function quickly overtakes <m>T(n)</m>. It is easy
+            to see that <m>T(n)</m> then follows the <idx>quadratic</idx> quadratic function as
             <m>n</m> continues to grow.</p>
   <exercise label="crossoverefficiency">
     <statement>
@@ -316,7 +319,7 @@ main()</code>
   </exercise>
   <note>
     <title>Self Check</title>
-    <p>Write two Python functions to find the minimum number in an list.  The first function should compare each number to every other number on the list. <m>O(n^2)</m>.  The second function should be linear <m>O(n)</m>.</p>
+    <p>Write two Python functions to find the minimum number in an list.  The first function should compare each number to every other number on the list. <m>O(n^2)</m>.  The second function should be <idx>linear</idx> linear <m>O(n)</m>.</p>
   </note>
   <exercise>
     <statement>

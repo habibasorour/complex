@@ -8,7 +8,7 @@
   <p>The Turing machine is useful because it is possible to characterize the set of functions that can be computed by a Turing machine, which is what Turing did. Functions in this set are called <q>Turing computable</q>.</p>
   <p>To say that a Turing machine can compute any Turing-computable function is a tautology: it is true by definition. But Turing-computability is more interesting than that.</p>
   <p>It turns out that just about every reasonable model of computation anyone has come up with is <q>Turing complete</q>; that is, it can compute exactly the same set of functions as the Turing machine. Some of these models, like lamdba calculus, are very different from a Turing machine, so their equivalence is surprising.</p>
-  <p>This observation led to the <term>Church-Turing Thesis</term>, which is the claim that these definitions of computability capture something essential that is independent of any particular model of computation.</p>
+  <p>This observation led to the <idx>Church-Turing Thesis</idx><term>Church-Turing Thesis</term>, which is the claim that these definitions of computability capture something essential that is independent of any particular model of computation.</p>
   <p>The Rule 110 CA is yet another model of computation, and remarkable for its simplicity. That it, too, turns out to be Turing complete lends support to the Church-Turing Thesis.</p>
   <p>In <em>A New Kind of Science</em>, Wolfram states a variation of this thesis, which he calls the <q>principle of computational equivalence</q>:</p>
   <p>Almost all processes that are not obviously simple can be viewed as computations of equivalent sophistication.

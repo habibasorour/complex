@@ -70,8 +70,9 @@
        <p>
           <term>Word Bank:</term>
         </p>
-        <table>
-          <tabular>
+        <table xml:id="scale-free-networks_word-bank-table">
+          <title>Word Bank</title>
+          <tabular xml:id="scale-free-networks_word-bank-tabular">
             <row>
               <cell>Observable</cell>
               <cell>Behavior</cell>

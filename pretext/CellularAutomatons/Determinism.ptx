@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_determinism">
   <title>Determinism</title>
-  <p>The existence of Class 3 CAs is surprising. To explain how surprising, let's start with philosophical <term>determinism</term>. Many philosophical stances are hard to define precisely because they come in a variety of flavors. It might be useful to define them with a list of statements ordered from weak to strong:</p>
+  <p>The existence of Class 3 CAs is surprising. To explain how surprising, let's start with philosophical <idx>determinism</idx><term>determinism</term>. Many philosophical stances are hard to define precisely because they come in a variety of flavors. It might be useful to define them with a list of statements ordered from weak to strong:</p>
   <p><term>D1:</term>  Deterministic models can make accurate predictions for some physical systems.</p>
   <p><term>D2:</term>  Many physical systems can be modeled by deterministic processes, but some are intrinsically random.</p>
   <p><term>D3:</term>  All events are caused by prior events, but many physical systems are nevertheless fundamentally unpredictable.</p>

@@ -10,7 +10,7 @@
         <p>The change to a log-log scale significantly alters the visual representation of these distributions. The WS model's distribution typically remains compact, while the tail of the Facebook dataset's distribution is emphasized. The accompanying text discusses how this transformation can reveal underlying patterns, such as the appearance of a nearly straight line for the Facebook data, which is indicative of a power-law relationship explained in the text.</p>
       </description> </image>
   </figure>
-  <p><term>Heavy-tailed distributions</term> are a common feature in many areas of complexity science and they will be a recurring theme of this book.</p>
+  <p><idx>heavy-tailed distributions</idx><term>Heavy-tailed distributions</term> are a common feature in many areas of complexity science and they will be a recurring theme of this book.</p>
   <p>We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in <xref ref="sfn-fig-2"/>. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.</p>
   <p>Under this transformation, the data fall approximately on a straight line, which suggests that there is a <term>power law</term> relationship between the largest values in the distribution and their probabilities. Mathematically, a distribution obeys a power law if <md>\text{PMF}(k) \sim k^{-\alpha}</md> where <c>PMF(k)</c> is the fraction of nodes with degree <c>k</c>, <c>&#x3B1;</c> is a parameter, and the symbol &#x223C; indicates that the <c>PMF</c> is asymptotic to <c>k&#x2212;&#x3B1;</c> as <c>k</c> increases.</p>
   <p>If we take the log of both sides, we get:<md>

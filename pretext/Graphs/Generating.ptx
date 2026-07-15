@@ -9,7 +9,7 @@
         <p>The image depicts a complete graph consisting of ten nodes. These nodes, labeled 0 through 9, are arranged in a circular pattern for visual clarity. Every node is connected to every other node by a straight edge, forming a dense network where all possible connections are present. This illustrates the fundamental property of a complete graph: full interconnectivity between all its vertices.</p>
       </description> </image>
   </figure>
-  <p>We'll start by generating a <term>complete graph</term>, which is a graph where every node is connected to every other.</p>
+  <p>We'll start by generating a <idx>complete graph</idx><term>complete graph</term>, which is a graph where every node is connected to every other.</p>
   <p>Here's a generator function that takes a list of nodes and enumerates all distinct pairs. If you are not familiar with generator functions.</p>
   <pre>def all_pairs(nodes):
 for i, u in enumerate(nodes):
