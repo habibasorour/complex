@@ -58,6 +58,7 @@
             coefficient <m>5</m> becomes insignificant as <m>n</m> gets large. We
             would say then that the function <m>T(n)</m> has an order of
             magnitude <m>f(n)=n^{2}</m>, or simply that it is <m>O(n^{2})</m>.</p>
+
   <exercise label="bigo3">
     <statement>
       <p>If the exact number of steps is <md>T(n)=2n+3n^{2}-1</md>. What is the Big O?</p>
@@ -119,15 +120,16 @@
             scientist to understand these distinctions so they are not misled by one
             particular case.</p>
   <p>A number of very common order of magnitude functions will come up over
-            and over as you study algorithms. These are shown in <xref ref="algorithm-analysis_id1"/>. In
+            and over as you study algorithms. These are shown in <xref ref="algorithm-analysis_table_common_big_o_functions"/>. In
             order to decide which of these functions is the dominant part of any
             <m>T(n)</m> function, we must see how they compare with one another
             as <m>n</m> gets large.</p>
-  <table xml:id="algorithm-analysis_id1">
+
+  <table xml:id="algorithm-analysis_table_common_big_o_functions">
+  <title>
+        <term>Common Big-O Functions</term>
+  </title>
     <tabular>
-      <title>
-        <term>Table 1: Common Big-O Functions</term>
-      </title>
       <row header="yes">
         <cell>
           <term>f(n)</term>
@@ -194,14 +196,15 @@
       </row>
     </tabular>
   </table>
-  <p><xref ref="fig-graphfigurecpp"/> shows graphs of the common
-            functions from <xref ref="algorithm-analysis_id1"/>. Notice that when <m>n</m> is small, the
+  <p><xref ref="fig-algorithm-analysis_graph_common_big_o_functions"/> shows graphs of the common
+            functions from <xref ref="algorithm-analysis_table_common_big_o_functions"/>. Notice that when <m>n</m> is small, the
             functions are not very well defined with respect to one another. It is
             hard to tell which is dominant. However, as <m>n</m> grows, there is a
             definite relationship and it is easy to see how they compare with one
             another.</p>
-  <figure align="" xml:id="fig-graphfigurecpp">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Common Big-O Functions</caption>
+            
+  <figure align="" xml:id="fig-algorithm-analysis_graph_common_big_o_functions">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Common Big-O Functions</caption>
     <image source="AlgorithmAnalysis/Figures/newplot.png" width="50%" >
     <shortdescription>Graph comparing growth rates of common Big-O functions.</shortdescription>
       <description>
@@ -261,8 +264,9 @@ main()</code>
             therefore this fragment of code is <m>O(n^{2})</m>. Note that all of
             the other terms as well as the coefficient on the dominant term can be
             ignored as <m>n</m> grows larger.</p>
-  <figure align="" xml:id="fig-graphfigure2cpp">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Comparing <m>T(n)</m> with Big-O Functions</caption>
+
+  <figure align="" xml:id="fig-algorithm-analysis_graph_comparing_big_o_functions">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Comparing <m>T(n)</m> with Big-O Functions</caption>
     <image source="AlgorithmAnalysis/Figures/newplot2.png" width="50%" >
     <shortdescription>Graph comparing a specific T(n) function with O(n), O(n^2), and O(n^3).</shortdescription>
       <description>
@@ -270,7 +274,7 @@ main()</code>
         <p>The plot illustrates how for small values of <m>n</m>, the <m>T(n)</m> function might initially appear larger than even the <m>O(n^3)</m> curve due to constants and lower-order terms. However, as <m>n</m> increases, the dominant <m>n^2</m> term in <m>T(n)</m> dictates its growth. The graph shows <m>T(n)</m> growing faster than <m>O(n)</m> and eventually aligning closely with the growth rate of <m>O(n^2)</m>, while the <m>O(n^3)</m> function grows much more rapidly and overtakes <m>T(n)</m>.</p>
       </description> </image>
   </figure>
-  <p><xref ref="fig-graphfigure2cpp"/> shows a few of the common Big-O functions as they
+  <p><xref ref="fig-algorithm-analysis_graph_comparing_big_o_functions"/> shows a few of the common Big-O functions as they
             compare with the <m>T(n)</m> function discussed above. Note that
             <m>T(n)</m> is initially larger than the cubic function. However, as
             n grows, the cubic function quickly overtakes <m>T(n)</m>. It is easy
