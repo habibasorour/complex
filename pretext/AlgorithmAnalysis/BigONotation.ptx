@@ -194,7 +194,7 @@
     </tabular>
   </table>
   <p><xref ref="fig-algorithm-analysis_graph_common_big_o_functions"/> shows graphs of the common
-            functions from <xref ref="algorithm-analysis_table_common_big_o_functions"/>. Notice that when <em>n</em> is small, the
+            functions from <xref ref="algorithm-analysis_table_common_big_o_functions"/>. Notice that when <m>n</m> is small, the
             functions are not very well defined with respect to one another. It is
             hard to tell which is dominant. However, as <m>n</m> grows, there is a
             definite relationship and it is easy to see how they compare with one
@@ -260,7 +260,7 @@ main()</code>
             we can easily see that the <m>n^{2}</m> term will be dominant and
             therefore this fragment of code is <m>O(n^{2})</m>. Note that all of
             the other terms as well as the coefficient on the dominant term can be
-            ignored as <em>n</em> grows larger.</p>
+            ignored as <m>n</m> grows larger.</p>
 
   <figure align="" xml:id="fig-algorithm-analysis_graph_comparing_big_o_functions">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Comparing <m>T(n)</m> with Big-O Functions</caption>
