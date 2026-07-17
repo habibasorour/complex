@@ -26,10 +26,10 @@
   <p>As one of the exercises at the end of this chapter, you can modify these parameters and see how they affect Boid behavior.</p>
   <exercise>
     <statement>
-      <p>After computing a goal for each Boid, we update their <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
+      <p>After computing a goal for each Boid, we update their <var/> and <var/>.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*velocity\s*$">
           <feedback>
             <p>Correct!</p>
@@ -46,7 +46,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*position\s*$">
           <feedback>
             <p>Correct!</p>
